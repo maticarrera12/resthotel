@@ -1,0 +1,27 @@
+.footer{
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    color: var(--white);
+}
+
+.footer-text{
+    align-self: center;
+}
+
+.links a {
+    color: inherit;
+    text-decoration: none; /* Elimina el subrayado */
+    margin: 0 2px; /* Espacio entre los iconos */
+    display: inline-block; /* Asegura que la transformación funcione */
+}
+
+.links a svg { 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.links a:hover svg {
+    transform: scale(1.2);
+}

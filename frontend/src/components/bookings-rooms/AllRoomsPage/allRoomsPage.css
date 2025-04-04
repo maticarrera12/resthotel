@@ -1,0 +1,16 @@
+.all-rooms-page{
+    background-color: var(--soft-gray);  
+}
+
+.search-container{
+    padding-block: 16px;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.all-rooms-category select{
+    border: none;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 5px;
+}

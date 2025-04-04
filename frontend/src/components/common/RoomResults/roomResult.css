@@ -1,0 +1,56 @@
+
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas en la fila */
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-block: 32px;
+}
+
+.room-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro de cada tarjeta */
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(--soft-gray);
+    padding: 10px;
+}
+
+.room-list-item-image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.detail-button{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    padding: 8px;
+    cursor: pointer;
+    color: var(--white);
+    transition: all .2s ease;
+}
+
+.detail-button:hover{
+    background-color: var(--primary-color-hover);
+}
+
+/* 📌 En pantallas grandes (más de 768px) se mostrarán en dos columnas */
+@media (min-width: 768px) {
+    .room-list {
+        justify-content: space-evenly; /* Espacia uniformemente las tarjetas */
+    }
+
+    .room-list-item {
+        width: 45%; /* Cada tarjeta ocupará el 45% del contenedor */
+    }
+}
+

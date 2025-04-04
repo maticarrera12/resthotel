@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+:root {
+  --primary-color: #007BFF;
+  --primary-color-hover: #0076F5;
+  --primary-color-select: #006CE0;
+  --primary-color-background: #EBF4FF;
+  --secondary-color: #3F434D;
+  --secondary-color-background: #EFF0F3;
+  --white: #FFFFFF;
+  --dark-gray: #D9D9D9;
+  --soft-gray: #F5F5F5;
+  --green: #08875D;
+  --green-hover: #04724D;
+  --green-select: #066042;
+  --red: #E02D3C;
+  --red-hover: #BA2532;
+  --red-select: #990000;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hace que el contenedor principal ocupe toda la altura de la pantalla */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Permite que el contenido crezca y empuje el footer hacia abajo */
+.content {
+  flex: 1;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 8px;
+}
+
+ul li a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Usa el color heredado del padre */
+}
+
+ul li a:visited {
+  color: inherit; /* Evita el color violeta después de la visita */
+}
+
+
+@media (max-width: 992px) {
+  .ant-picker-panel:last-child .ant-picker-date-panel {
+    display: none !important;
+  }
+  .ant-picker-panel:first-child .ant-picker-date-panel .ant-picker-header-next-btn,
+  .ant-picker-panel:first-child .ant-picker-date-panel .ant-picker-header-super-next-btn {
+    visibility: initial !important;
+  }
+
+  .ant-picker-panel.ant-picker-range-wrapper {
+    min-width: 288px !important;
+  }
+
+  .ant-picker-presets {
+    display: none !important;
+  }
+}

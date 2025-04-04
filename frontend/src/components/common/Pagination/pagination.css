@@ -1,0 +1,6 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding-block: 20px;
+    background-color: var(--soft-gray);
+}

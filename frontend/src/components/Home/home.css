@@ -1,0 +1,19 @@
+.banner-container{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente si tiene altura definida */
+    text-align: center; /* Asegura que el texto también esté centrado */
+    height: 50vh;
+}
+
+.banner-text{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+}
+
+
+
