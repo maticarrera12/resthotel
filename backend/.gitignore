@@ -29,5 +29,7 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+# Env file para variables sensibles
+.env
 ### VS Code ###
 .vscode/
