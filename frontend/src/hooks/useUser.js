@@ -13,8 +13,8 @@ const useUser = () => {
         headers: getHeader(),
       });
   
-      console.log("User API Response:", response); // Verifica qué devuelve exactamente la API
-      console.log("User API Response Data:", response.data); // Revisa los datos específicos
+      // console.log("User API Response:", response); // Verifica qué devuelve exactamente la API
+      // console.log("User API Response Data:", response.data); // Revisa los datos específicos
   
       if (!response.data) {
         throw new Error("No se pudo obtener el perfil del usuario");

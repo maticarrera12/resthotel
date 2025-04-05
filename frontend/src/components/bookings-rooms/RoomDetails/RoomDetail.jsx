@@ -102,6 +102,25 @@ const RoomDetail = () => {
         <p>Precio: ${roomDetails.roomPrice} / noche</p>
         <p>{roomDetails.description}</p>
       </div>
+
+      {/* {bookings && bookings.length > 0 && (
+        <div>
+          <h3>Existing Booking Details</h3>
+          <ul className="booking-list">
+            {bookings.map((booking, index) => (
+              <li key={booking.id} className="booking-item">
+                <span className="booking-number">Booking {index + 1} </span>
+                <span className="booking-text">Check-in: {booking.checkInDate} </span>
+                <span className="booking-text">Out: {booking.checkOutDate}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )} */}
+
+
+
+
       <RangePicker onChange={setDates} format="DD/MM/YYYY" />
       <div>
         <label>Adultos: </label>

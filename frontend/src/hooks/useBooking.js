@@ -27,7 +27,8 @@ const useBooking = () => {
       const response = await axios.get(`${BASE_URL}/bookings/all`, {
         headers: getHeader()
       });
-      setBookings(response.data);
+      console.log(response.data)
+      return response.data
     } catch (error) {
       setError(error);
     }

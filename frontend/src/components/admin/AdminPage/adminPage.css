@@ -1,0 +1,18 @@
+.admin-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-block: 32px;
+    max-width: 500px;
+    padding: 16px;
+    border: 5px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.admin-actions{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

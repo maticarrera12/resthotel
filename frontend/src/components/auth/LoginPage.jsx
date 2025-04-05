@@ -11,6 +11,9 @@ const LoginPage = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const {loginUser} = useAuth()
+
+
+    
     const from = location.state?.from?.pathname || '/home'
 
     const handleSubmit = async (el) => {
